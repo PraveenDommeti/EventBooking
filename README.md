@@ -4,7 +4,7 @@ A modern, responsive website for **Stellar Celebrations**, a premium event manag
 
 ## 🚀 Live Demo
 
-Visit the live website: Soon
+Visit the live website: https://praveendommeti.github.io/EventBooking/
 
 ## ✨ Features
 
