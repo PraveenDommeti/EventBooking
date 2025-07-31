@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stellar Celebrations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top"style="background-color:#343a40 !important;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                </i>Stellar Celebrations
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html#event-types">Event Types</a></li>
+                            <li><a class="dropdown-item" href="services.html#event-services">Event Services</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-center">Contact Us</h1>
+            <h3 class="lead fw-bold text-dark text-center">Let's plan your perfect event together</h3>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5">
+                    <div class="contact-form-wrapper">
+                        <h3 class="mb-4">Get In Touch</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="eventType" class="form-label">Event Type</label>
+                                <select class="form-select" id="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="family">Family Get-Together</option>
+                                    <option value="school">School Function</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="eventDate" class="form-label">Event Date</label>
+                                    <input type="date" class="form-control" id="eventDate" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Tell us about your event</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Describe your vision, requirements, and any special requests..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" onclick="validateAndRedirect(event)">
+                                Send Message
+                                <i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                            
+                            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+                            
+                            <script>
+                            function validateAndRedirect(event) {
+                                event.preventDefault();
+                                
+                                const requiredFields = document.querySelectorAll('#contactForm [required]');
+                                let isValid = true;
+                            
+                                requiredFields.forEach(field => {
+                                    if (!field.value.trim()) {
+                                        isValid = false;
+                                        field.classList.add('is-invalid');
+                                    } else {
+                                        field.classList.remove('is-invalid');
+                                    }
+                                });
+                            
+                                if (isValid) {
+                                    const defaults = {
+                                        spread: 360,
+                                        ticks: 50,
+                                        gravity: 0,
+                                        decay: 0.94,
+                                        startVelocity: 30,
+                                        shapes: ["star"],
+                                        colors: ["#FFE400", "#FFBD00", "#E89400", "#FFCA6C", "#FDFFB8"]
+                                    };
+                            
+                                    function shoot() {
+                                        confetti({
+                                            ...defaults,
+                                            particleCount: 40,
+                                            scalar: 1.2,
+                                            shapes: ["star"]
+                                        });
+                            
+                                        confetti({
+                                            ...defaults,
+                                            particleCount: 10,
+                                            scalar: 0.75,
+                                            shapes: ["circle"]
+                                        });
+                                    }
+                            
+                                    // Trigger confetti animation
+                                    shoot();
+                                    setTimeout(shoot, 100);
+                                    setTimeout(shoot, 200);
+                            
+                                    // Submit form after animation
+                                    setTimeout(() => {
+                                        document.getElementById('contactForm').dispatchEvent(new Event('submit'));
+                                    }, 1500);
+                                }
+                            }
+                            </script>
+
+                        
+
+</form>
+                    
+</div>
+                
+</div>
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Contact Information</h3>
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Address</h5>
+                                <p>123 Celebration Avenue<br>Suite 456, Downtown District<br>New York, NY 10001, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone</h5>
+                                <p>+1 (555) 123-4567</p>
+                                <p>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p>info@stellarcelebrations.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Business Hours</h5>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <h5>Follow Us</h5>
+                            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/918341305025" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Find Us</h3>
+            <div class="map-placeholder">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0374847!2d80.14!3d12.94!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c5a5a5a5a5a%3A0x5a5a5a5a5a5a5a5a!2sBharathipuram%2C%20Chrompet%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>RK Events & Management</h5>
+                    <p>Creating unforgettable moments with creativity, professionalism, and style.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light-50">Home</a></li>
+                        <li><a href="services.html" class="text-light-50">Services</a></li>
+                        <li><a href="services.html" class="text-light-50">Services</a></li>
+                        <li><a href="contact.html" class="text-light-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contact Info</h6>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567, (555) 987-6543</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i>info@stellarcelebrations.com</p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 social-icon bg-info rounded-circle">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 social-icon bg-danger rounded-circle">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 social-icon bg-warning rounded-circle">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="text-light social-icon bg-success rounded-circle">
+                            <i class="fas fa-phone text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form values
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('phone');
+            const eventTypeInput = document.getElementById('eventType');
+            const eventDateInput = document.getElementById('eventDate');
+            const messageInput = document.getElementById('message');
+
+            const name = nameInput ? nameInput.value.trim() : 'N/A';
+            const email = emailInput ? emailInput.value.trim() : 'N/A';
+            const phone = phoneInput ? phoneInput.value.trim() : 'N/A';
+            const eventType = eventTypeInput ? eventTypeInput.value : 'N/A';
+            const eventDate = eventDateInput ? eventDateInput.value : 'N/A';
+            const clientMessage = messageInput ? messageInput.value.trim() : 'N/A';
+
+            // Format the message for WhatsApp
+            let whatsappMessage = `Hello Sir,\nWe are going to plan an event. These are my details:\n\nNew Event Inquiry:\n\n`;
+            whatsappMessage += `Name: ${name}\n`;
+            whatsappMessage += `Email: ${email}\n`;
+            whatsappMessage += `Client Phone: ${phone}\n`;
+            whatsappMessage += `Event Type: ${eventType}\n`;
+            whatsappMessage += `Event Date: ${eventDate}\n`;
+            whatsappMessage += `Message: ${clientMessage}\n`;
+
+            // Stellar Celebrations WhatsApp number (ensure it includes country code without '+' or '00')
+            const stellarCelebrationsWhatsappNumber = '15551234567'; // Country code added, '+' removed
+
+            // Create WhatsApp link
+            const whatsappUrl = `https://wa.me/${stellarCelebrationsWhatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappUrl, '_blank'); // Opens in a new tab
+        });
+    } else {
+        console.error('Contact form with ID "contactForm" not found.');
+    }
+});
+</script>
+</body>
+</html>

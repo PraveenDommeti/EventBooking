@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Types - Stellar Celebrations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top" style="background-color:#343a40 !important;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+            Stellar Celebrations
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service-types.html">Event Types</a></li>
+                            <li><a class="dropdown-item" href="services.html#event-services">Event Services</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="event-types-header">
+        <div class="container">
+            <h1 class="text-center mb-5" style="font-weight: bold;">Event Types</h1>
+            <h3 class="text-center text-muted mb-5" style="color: #000; font-weight: bold;">Professional event management for every occasion</h3>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Corporate Events -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card-modern" data-bs-toggle="modal" data-bs-target="#corporateModal">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Corporate Events" class="event-image">
+                        </div>
+                        <div class="event-content">
+                            <h3 style="color: #2e2e2e;">Corporate Events</h3>
+                            <p>Professional conferences, team building, product launches, and company celebrations with seamless execution.</p>
+                        </div>
+                        <p class="text-center">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#corporateModal">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Family Functions -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card-modern" data-bs-toggle="modal" data-bs-target="#familyModal">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Family Functions" class="event-image">
+                        </div>
+                        <div class="event-content">
+                            <h3 style="color: #2e2e2e;">Family Functions</h3>
+                            <p>Intimate family gatherings, anniversaries, birthdays, and personal celebrations crafted with love.</p>
+                        </div>
+                        <p class="text-center">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#corporateModal">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- School Celebrations -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="event-card-modern" data-bs-toggle="modal" data-bs-target="#schoolModal">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="School Celebrations" class="event-image">
+                        </div>
+                        <div class="event-content">
+                            <h3 style="color: #2e2e2e;">School Celebrations</h3>
+                            <p>Educational events, annual functions, sports days, and graduation ceremonies that inspire and engage.</p>
+                        </div>
+                        <p class="text-center">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#corporateModal">Learn More</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Company Annual Day -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="event-card-modern" data-bs-toggle="modal" data-bs-target="#companyModal">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Company Annual Day" class="event-image">
+                        </div>
+                        <div class="event-content">
+                            <h3 style="color: #2e2e2e;">Company Annual Day Celebrations</h3>
+                            <p>Grand corporate celebrations that boost employee morale and showcase company culture with prestigious recognition events.</p>
+                        </div>
+                        <p class="text-center">
+                                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#corporateModal">Learn More</a>
+                            </p>
+                    </div>
+                </div>
+
+                <!-- Anniversaries and Special Occasions -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="event-card-modern" data-bs-toggle="modal" data-bs-target="#anniversaryModal">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Anniversaries" class="event-image">
+                        </div>
+                        <div class="event-content">
+                            <h3 style="color: #2e2e2e;">Anniversaries & Special Occasions</h3>
+                            <p>Romantic anniversaries and once-in-a-lifetime celebrations that honor love, commitment, and life's important milestones.</p>
+                        </div>
+                        <p class="text-center">
+                                <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#corporateModal">Learn More</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Corporate Events -->
+    <div class="modal fade" id="corporateModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Corporate Events" class="modal-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="modal-title-modern"style="color: #000;">Corporate Events</h3>
+                            <p class="modal-description">Transform your corporate gatherings into memorable experiences with our comprehensive event management services. We specialize in creating professional, engaging, and impactful corporate events that reflect your company's values and objectives.</p>
+                            
+                            <div class="modal-features">
+                                <h5>Our Services Include:</h5>
+                                <ul>
+                                    <li>Conferences & Seminars</li>
+                                    <li>Product Launches</li>
+                                    <li>Team Building Activities</li>
+                                    <li>Awards Ceremonies</li>
+                                    <li>Business Meetings</li>
+                                    <li>Corporate Training</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="contact.html" class="btn-book-now">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Family Functions -->
+    <div class="modal fade" id="familyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Family Functions" class="modal-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="modal-title-modern" style="color: #000;">Family Functions</h3>
+                            <p class="modal-description">Create lasting memories with your loved ones through our personalized family event services. We understand that family gatherings are precious moments that deserve special attention and care.</p>
+                            
+                            <div class="modal-features">
+                                <h5>Our Services Include:</h5>
+                                <ul>
+                                    <li>Birthday Parties</li>
+                                    <li>Family Reunions</li>
+                                    <li>Baby Showers</li>
+                                    <li>Holiday Celebrations</li>
+                                    <li>Graduation Parties</li>
+                                    <li>Homecoming Celebrations</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="contact.html" class="btn-book-now">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for School Celebrations -->
+    <div class="modal fade" id="schoolModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="School Celebrations" class="modal-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="modal-title-modern" style="color: #000;">School Celebrations</h3>
+                            <p class="modal-description">Make your school's annual day a memorable celebration of learning and achievement. We specialize in creating engaging, educational, and fun events that showcase student talents and celebrate academic excellence.</p>
+                            
+                            <div class="modal-features">
+                                <h5>Our Services Include:</h5>
+                                <ul>
+                                    <li>Annual Day Celebrations</li>
+                                    <li>Prize Distribution Ceremonies</li>
+                                    <li>Cultural Programs</li>
+                                    <li>Sports Day Events</li>
+                                    <li>Science Exhibitions</li>
+                                    <li>Graduation Ceremonies</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="contact.html" class="btn-book-now">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Company Annual Day -->
+    <div class="modal fade" id="companyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Company Annual Day" class="modal-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="modal-title-modern" style="color: #000;">Company Annual Day Celebrations</h3>
+                            <p class="modal-description">Celebrate your company's achievements and milestones with spectacular annual day events. We create grand celebrations that boost employee morale, showcase company culture, and strengthen team bonds.</p>
+                            
+                            <div class="modal-features">
+                                <h5>Our Services Include:</h5>
+                                <ul>
+                                    <li>Employee Recognition Ceremonies</li>
+                                    <li>Milestone Celebrations</li>
+                                    <li>Entertainment Programs</li>
+                                    <li>Award Ceremonies</li>
+                                    <li>Company Picnics</li>
+                                    <li>Gala Dinners</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="contact.html" class="btn-book-now">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Anniversaries -->
+    <div class="modal fade" id="anniversaryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Anniversaries" class="modal-image">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="modal-title-modern" style="color: #000;">Anniversaries & Special Occasions</h3>
+                            <p class="modal-description">Mark life's most precious moments with our specialized anniversary and special occasion services. We create romantic, elegant, and unforgettable celebrations that honor love, commitment, and life's important milestones.</p>
+                            
+                            <div class="modal-features">
+                                <h5>Our Services Include:</h5>
+                                <ul>
+                                    <li>Wedding Anniversaries</li>
+                                    <li>Golden Jubilees</li>
+                                    <li>Silver Jubilees</li>
+                                    <li>Milestone Birthdays</li>
+                                    <li>Retirement Parties</li>
+                                    <li>Engagement Celebrations</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="contact.html" class="btn-book-now">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5></i>Stellar Celebrations</h5>
+                    <p>Creating unforgettable moments with creativity, professionalism, and style.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light-50">Home</a></li>
+                        <li><a href="services.html" class="text-light-50">Services</a></li>
+                        <li><a href="services.html" class="text-light-50">Services</a></li>
+                        <li><a href="contact.html" class="text-light-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contact Info</h6>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+91 9703121430, 9710916687</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i>rkeventchennai@gmail.com</p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 social-icon bg-info rounded-circle">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 social-icon bg-danger rounded-circle">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 social-icon bg-warning rounded-circle">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="text-light social-icon bg-success rounded-circle">
+                            <i class="fas fa-phone text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

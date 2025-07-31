@@ -1,0 +1,1018 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Stellar Celebrations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top" style="background-color:#343a40 !important;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Stellar Celebrations
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service-types.html">Event Types</a></li>
+                            <li><a class="dropdown-item" href="services.html">Event Services</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4  fw-bold text-center">Event Services We Offer</h1>
+            <h5 class="lead text-black fw-bold text-center">Professional event solutions with creative excellence</h5>
+        </div>
+    </section>
+
+    <!-- Event Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Interactive Games & Entertainment -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('entertainment')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="Interactive Entertainment">
+                        </div>
+                        <div class="event-content">
+                            <h3>Interactive Games & Entertainment</h3>
+                            <p>Professional entertainment solutions with engaging games and activities for guests of all ages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DJ Setup -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('djSetup')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="DJ Setup">
+                        </div>
+                        <div class="event-content">
+                            <h3>DJ Setup</h3>
+                            <p>Professional DJ services with top-quality sound systems to create an electrifying atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 360° Spin Booth -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('spinBooth')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="360 Spin Booth">
+                        </div>
+                        <div class="event-content">
+                            <h3>360° Spin Booth</h3>
+                            <p>Create stunning 360-degree videos of your guests with our state-of-the-art spin booth, available with or without software.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Welcome Girls -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('welcomeGirls')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2088&q=80" class="event-image" alt="Welcome Girls">
+                        </div>
+                        <div class="event-content">
+                            <h3>Welcome Girls</h3>
+                            <p>Professionally trained hosts to welcome your guests with elegance and ensure a memorable first impression.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 90s Kids Sweets Section -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('kidsSweets')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" class="event-image" alt="90s Kids Sweets">
+                        </div>
+                        <div class="event-content">
+                            <h3>90s Kids Sweets Section</h3>
+                            <p>A nostalgic collection of retro candies and treats that will transport your guests back to their childhood.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio-Visual & Stage Setup -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('audioVisual')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="Audio Visual Setup">
+                        </div>
+                        <div class="event-content">
+                            <h3>Audio-Visual & Stage Setup</h3>
+                            <p>Professional lighting, sound systems and stage fabrication for spectacular events with unforgettable experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LED Wall Setup -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('ledWall')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="LED Wall Setup">
+                        </div>
+                        <div class="event-content">
+                            <h3>LED Wall Setup</h3>
+                            <p>High-definition LED walls for stunning visual displays, presentations, and dynamic backdrops for your event.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TV Rental -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('tv')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="TV Rental">
+                        </div>
+                        <div class="event-content">
+                            <h3>TV Rental</h3>
+                            <p>Premium television rental services available in various sizes to meet any event requirements and specifications.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DF Honeycomb Setup -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('honeycomb')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="DF Honeycomb Setup">
+                        </div>
+                        <div class="event-content">
+                            <h3>DF Honeycomb Setup</h3>
+                            <p>Elegant and modern honeycomb display setups that create a stunning visual impact for your special occasions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Customized Theme Decoration -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('themeDecor')">
+                        <div class="event-image-container">
+                            <img src="images/venue.jpg" class="event-image" alt="Customized Theme Decoration">
+                        </div>
+                        <div class="event-content">
+                            <h3>Customized Theme Decoration</h3>
+                            <p>Personalized thematic decoration services designed to bring your creative vision to life for any event.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mehndi Art -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('mehndiArt')">
+                        <div class="event-image-container">
+                            <img src="images/mehindhiart.jpg" class="event-image" alt="Mehndi Art">
+                        </div>
+                        <!-- Contains the content of the event card, including title and description -->
+                        <div class="event-content">
+                            <h3>Mehndi Art</h3>
+                            <p>Professional henna artists creating beautiful, intricate designs for your guests at weddings and celebrations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nail Art -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('nailArt')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="Nail Art">
+                        </div>
+                        <div class="event-content">
+                            <h3>Nail Art</h3>
+                            <p>Creative and stylish nail art services to add a fun, interactive beauty experience to your event.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food & Snacks -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('food')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" class="event-image" alt="Food & Snacks">
+                        </div>
+                        <div class="event-content">
+                            <h3>Food & Snacks</h3>
+                            <p>Delicious food and snack options to keep your guests satisfied and energized throughout your event.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Catering Services -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('catering')">
+                        <div class="event-image-container">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="event-image" alt="Catering Services">
+                        </div>
+                        <div class="event-content">
+                            <h3>Catering Services</h3>
+                            <p>Full-service catering with custom menus featuring gourmet cuisine options for events of any size.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Popcorn & Cotton Candy Stalls -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="event-card-modern" onclick="openServiceModal('popcorn')">
+                        <div class="event-image-container">
+                            <img src="images/Popcorn & Cotton Candy Stalls.jpg" class="event-image" alt="Popcorn & Cotton Candy Stalls">
+                        </div>
+                        <div class="event-content">
+                            <h3>Popcorn & Cotton Candy Stalls</h3>
+                            <p>Fun and nostalgic treat stations serving fresh popcorn and cotton candy to delight guests of all ages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modals -->
+    <!-- Decor Modal -->
+    <div class="modal fade" id="decorModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <img src="/lovable-uploads/ea59e5ec-5948-43b3-bdb6-737926c642db.png" class="modal-image" alt="Custom Decoration">
+                    <h2 class="modal-title-modern">Decor & Custom Installations</h2>
+                    <p class="modal-description">Create stunning visual experiences with our custom decoration and installation services. From elegant backdrops to themed environments, we bring your vision to life.</p>
+                    <div class="modal-features">
+                        <h5>Our Services Include:</h5>
+                        <ul>
+                            <li>Custom Backdrops - Photo-ready backgrounds for every occasion</li>
+                            <li>DF Honeycomb Setup - Modern geometric decorative elements</li>
+                            <li>Customized Theme Decoration - Tailored designs for your specific theme</li>
+                            <li>Balloon Installations - Creative balloon arrangements and arches</li>
+                            <li>Floral Arrangements - Fresh and artificial flower displays</li>
+                            <li>Lighting Ambiance - Mood lighting to enhance your decor</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn-book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Art Activity Modal -->
+    <div class="modal fade" id="artActivityModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <img src="/lovable-uploads/d6cb1424-6ae3-4250-8f3a-2c031c222c61.png" class="modal-image" alt="Art Activities">
+                    <h2 class="modal-title-modern">Art & Activity Stalls</h2>
+                    <p class="modal-description">Engage your guests with interactive art and activity stations. Our skilled artists provide memorable experiences that add a personal touch to your event.</p>
+                    <div class="modal-features">
+                        <h5>Our Services Include:</h5>
+                        <ul>
+                            <li>Mehndi Art - Traditional henna designs by expert artists</li>
+                            <li>Portrait Art - Live sketching and caricature services</li>
+                            <li>Nail Art - Creative nail decoration and designs</li>
+                            <li>Bangle Making - Interactive jewelry crafting workshops</li>
+                            <li>Face Painting - Fun designs for children and adults</li>
+                            <li>Craft Workshops - DIY activities for all age groups</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn-book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Food Snacks Modal -->
+    <div class="modal fade" id="foodSnacksModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <img src="/lovable-uploads/d3b05d27-c67c-4688-9674-e23064b70658.png" class="modal-image" alt="Catering Services">
+                    <h2 class="modal-title-modern">Food & Snacks</h2>
+                    <p class="modal-description">Delight your guests with our comprehensive food and beverage services. From full catering to specialty snack stations, we cater to all tastes and preferences.</p>
+                    <div class="modal-features">
+                        <h5>Our Services Include:</h5>
+                        <ul>
+                            <li>Full Catering Services - Complete meal solutions with diverse menu options</li>
+                            <li>Popcorn Stalls - Fresh, flavored popcorn varieties</li>
+                            <li>Cotton Candy Stalls - Sweet cotton candy treats for all ages</li>
+                            <li>90s Kids Sweets Section - Nostalgic candy and treat stations</li>
+                            <li>Live Cooking Stations - Interactive culinary experiences</li>
+                            <li>Beverage Bars - Custom drink menus and mocktail stations</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn-book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Entertainment Modal -->
+    <div class="modal fade" id="entertainmentModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Interactive Entertainment" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-7">
+                            <h3 class="mb-4">Interactive Games & Entertainment</h3>
+                            <p class="mb-3">Keep your guests engaged with our exciting entertainment options. From DJ services to interactive games, we ensure everyone has a memorable time.</p>
+                            
+                            <h5 class="mt-4 mb-3">Features:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Professional DJ Setup - High-quality sound systems</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> 360° Spin Booth - With/without software integration</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Welcome Girls - Professional event hostesses</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Interactive Games - Fun activities for all ages</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> Photo Booth Services - Memorable experiences</li>
+                            </ul>
+                            
+                            <div class="mt-4">
+                                <a href="contact.html" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Traditional Modal -->
+    <div class="modal fade" id="traditionalModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modern-modal">
+                <div class="modal-header-modern">
+                    <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body-modern">
+                    <img src="/lovable-uploads/0780f18f-a32f-4bfa-9729-a1c76b975e51.png" class="modal-image" alt="Traditional Setup">
+                    <h2 class="modal-title-modern">Traditional & Cultural Setup</h2>
+                    <p class="modal-description">Celebrate your heritage with authentic traditional decorations and cultural arrangements. We specialize in creating meaningful cultural experiences.</p>
+                    <div class="modal-features">
+                        <h5>Our Services Include:</h5>
+                        <ul>
+                            <li>Traditional Mandap Setup - Authentic wedding and ceremony decorations</li>
+                            <li>Cultural Backdrop Designs - Traditional motifs and patterns</li>
+                            <li>Rangoli and Floor Art - Beautiful traditional floor decorations</li>
+                            <li>Traditional Seating Arrangements - Authentic cultural seating</li>
+                            <li>Festival Decorations - Themed setups for cultural celebrations</li>
+                            <li>Religious Ceremony Setup - Respectful and traditional arrangements</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn-book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DJ Setup Modal -->
+<div class="modal fade" id="djModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="DJ Setup" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">DJ Setup</h3>
+                        <p class="mb-3">Create an electrifying atmosphere at your event with our professional DJ services, featuring high-quality sound systems and expert music curation.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional DJs - Experienced music curators</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Premium Sound Systems - High-quality equipment</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Lighting Integration - Synchronized effects</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Customized Playlists - Tailored music selection</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> MC Services - Professional crowd engagement</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 360° Spin Booth Modal -->
+<div class="modal fade" id="spinModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="360° Spin Booth" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">360° Spin Booth</h3>
+                        <p class="mb-3">Create stunning 360-degree videos of your guests with our state-of-the-art spin booth technology.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> High-quality 360-degree video capture</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Customizable branded overlays</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Available with or without software</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Instant social media sharing capabilities</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional operation by our trained staff</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Welcome Girls Modal -->
+<div class="modal fade" id="welcomeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2088&q=80" alt="Welcome Girls" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Welcome Girls</h3>
+                        <p class="mb-3">Make a memorable first impression with our professionally trained hostesses who welcome and guide guests at your event with elegance and charm.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional hostesses trained in etiquette</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Customized themed attire</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Guest registration services</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Welcome gift distribution</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Multi-lingual staff available</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- 90s Kids Sweets Section Modal -->
+<div class="modal fade" id="kidsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" alt="90s Kids Sweets" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">90s Kids Sweets Section</h3>
+                        <p class="mb-3">A nostalgic collection of retro candies and treats that will transport your guests back to their childhood.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Curated selection of 90s-era candies and treats</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Beautifully styled display table</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom branding available</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Attendant to maintain and restock</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Take-home bags for guests</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Audio-Visual & Stage Setup Modal -->
+<div class="modal fade" id="audioVisualModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Audio-Visual & Stage Setup" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Audio-Visual & Stage Setup</h3>
+                        <p class="mb-3">Elevate your event with our comprehensive audio-visual and stage solutions, designed to deliver professional sound, lighting, and presentation capabilities.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional Sound Systems - Clear audio for any venue size</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom Stage Design - Tailored stage configurations</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Advanced Lighting Setup - Mood and spotlight solutions</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Projection Systems - High-definition display options</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Technical Crew - Expert staff for operation</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Backup Equipment - Redundancy for critical components</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- LED Wall Setup Modal -->
+<div class="modal fade" id="ledModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="LED Wall Setup" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">LED Wall Setup</h3>
+                        <p class="mb-3">Create stunning visual displays with our high-definition LED walls, perfect for presentations, videos, or dynamic backdrops at your event.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> High-Resolution Panels - Crystal clear video quality</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Modular Design - Customizable size and configuration</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Content Management - Pre-loaded or live content options</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Technical Support - On-site staff for seamless operation</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Integration Options - Works with most media sources</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Energy Efficient - Low power consumption technology</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- TV Rental Modal -->
+<div class="modal fade" id="tvModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="TV Rental" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">TV Rental</h3>
+                        <p class="mb-3">Provide a high-quality viewing experience at your event with our advanced TV rental options. Perfect for presentations, sports screenings, or digital displays.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> High-Definition Displays</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom Installation</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Technical Support</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Backup Equipment</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Multiple Screen Sizes</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DF Honeycomb Setup Modal -->
+<div class="modal fade" id="honeycombModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="DF Honeycomb Setup" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">DF Honeycomb Setup</h3>
+                        <p class="mb-3">Elegant and modern honeycomb display setups that create a stunning visual impact for your special occasions.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom-designed honeycomb display structures</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Integrated LED lighting options</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Adaptable to various event themes</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional installation and removal</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Customizable size and configuration</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Customized Theme Decoration Modal -->
+<div class="modal fade" id="themeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f29c8e8d4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2098&q=80" alt="Customized Theme Decoration" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Customized Theme Decoration</h3>
+                        <p class="mb-3">Personalized thematic decoration services designed to bring your creative vision to life for any event.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Completely customized designs</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Wide range of themes available</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional decorators and designers</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Premium quality materials</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Setup and teardown included</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mehndi Art Modal -->
+<div class="modal fade" id="mehndiModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Mehndi Art" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Mehndi Art</h3>
+                        <p class="mb-3">Add a touch of tradition with our professional mehndi art services, offering a variety of intricate and elegant designs.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional Artists - Expertise in various mehndi's</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom Designs - Tailored mehndi designs for any event theme</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Convenience - On-site mehndi application services</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Quality Products - Use of natural and safe henna products</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Group Bookings - Special packages for events and parties</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Nail Art Modal -->
+<div class="modal fade" id="nailModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Nail Art" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Nail Art</h3>
+                        <p class="mb-3">Creative and stylish nail art services to add a fun, interactive beauty experience to your event.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional nail artists</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Wide range of designs and styles</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Premium quality products</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom branding available</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Suitable for all ages</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Food & Snacks Modal -->
+<div class="modal fade" id="foodModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80" alt="Food & Snacks" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Food & Snacks</h3>
+                        <p class="mb-3">Delicious food and snack options to keep your guests satisfied and energized throughout your event.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Diverse menu selections</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Quality ingredients</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Customizable packages</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Accommodates dietary needs</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional presentation</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Catering Services Modal -->
+<div class="modal fade" id="cateringModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Catering Services" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Catering Services</h3>
+                        <p class="mb-3">Full-service catering with custom menus featuring gourmet cuisine options for events of any size.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Customized menu planning</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional serving staff</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Diverse cuisine options</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Accommodates dietary restrictions</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Full setup and cleanup services</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popcorn & Cotton Candy Modal -->
+<div class="modal fade" id="popcornModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content modern-modal">
+            <div class="modal-header-modern">
+                <button type="button" class="btn-close-modern" data-bs-dismiss="modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/Popcorn & Cotton Candy Stalls.jpg" alt="Popcorn & Cotton Candy Stalls" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-7">
+                        <h3 class="mb-4">Popcorn & Cotton Candy Stalls</h3>
+                        <p class="mb-3">Fun and nostalgic treat stations serving fresh popcorn and cotton candy to delight guests of all ages.</p>
+                        
+                        <h5 class="mt-4 mb-3">Features:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Professional attendants</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Freshly made treats</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Various flavor options</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Custom branded packaging available</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> Decorative stall setup</li>
+                        </ul>
+                        
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Ready to Plan Your Event?</h2>
+            <p class="lead text-white mb-4">Let us bring your vision to life with our comprehensive event services</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5></i>Stellar Celebrations</h5>
+                    <p>Creating unforgettable moments with creativity, professionalism, and style.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light-50">Home</a></li>
+                        <li><a href="services.html" class="text-light-50">Services</a></li>
+                        <li><a href="services.html" class="text-light-50">Services</a></li>
+                        <li><a href="contact.html" class="text-light-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contact Info</h6>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>+91 9703121430, 9710916687</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i>rkeventchennai@gmail.com</p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 social-icon bg-info rounded-circle">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 social-icon bg-danger rounded-circle">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="text-light me-3 social-icon bg-warning rounded-circle">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="text-light social-icon bg-success rounded-circle">
+                            <i class="fas fa-phone text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openServiceModal(serviceType) {
+            // Service type mapping to handle all services
+            const modalMapping = {
+                // Individual services with custom modals
+                'djSetup': 'dj',
+                'spinBooth': 'spin',
+                'welcomeGirls': 'welcome',
+                'kidsSweets': 'kids',
+                'ledWall': 'led',
+                'tv': 'tv', // Changed from 'tvRental' to 'tv' to match the onclick attribute
+                'honeycomb': 'honeycomb',
+                'themeDecor': 'theme',
+                'mehndiArt': 'mehndi',
+                'nailArt': 'nail',
+                'catering': 'catering',
+                'popcorn': 'popcorn',
+                'food': 'food'
+            };
+            
+            // Get the correct modal type or use default
+            const modalType = modalMapping[serviceType] || serviceType;
+            
+            // Convert to modal ID
+            const modalId = modalType + 'Modal';
+            
+            // Open the modal
+            const modal = new bootstrap.Modal(document.getElementById(modalId));
+            modal.show();
+        }
+    </script>
+</body>
+</html>
